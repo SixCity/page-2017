@@ -1,0 +1,52 @@
+a {
+  text-decoration: none;
+  color: #777;
+  &:hover {
+    // opacity: .9;
+    transition: .3 ease;
+  }
+}
+
+.hover {
+  &_9 {
+    &:hover {
+      opacity: .9
+    }
+  }
+}
+
+.transition {
+  &_3 {
+    transition: all .3 ease;
+  }
+}
+
+ul,
+li,
+p {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.m-auto {
+  margin: 0 auto;
+}
+
+.fr {
+  float: right;
+}
+
+.fl {
+  float: left;
+}
+
+.over {
+  &-hide {
+    overflow: hidden;
+  }
+}
+
+.hide {
+  display: none;
+}

@@ -1,0 +1,9 @@
+.margin {
+  &-bottom {
+    @for $i from 0 through 30 {
+      &_#{$i} {
+        margin-bottom: #{$i}px;
+      }
+    }
+  }
+}

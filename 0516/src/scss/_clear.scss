@@ -1,0 +1,19 @@
+.clearfix:after {
+  content: ".";
+  display: block;
+  height: 0;
+  clear: both;
+  visibility: hidden
+}
+
+// .clearfix {
+//   *+height: 1%;
+// }
+// .clearfix {
+//   overflow: auto;
+//   _height: 1%
+// }
+// .clearfix {
+//   overflow: hidden;
+//   _zoom: 1;
+// }

@@ -1,0 +1,86 @@
+.thumb-wrap {
+  position: absolute;
+  border: 1px solid #343434;
+  background: url("../img/loader.svg") no-repeat center center;
+  background-size: 60px;
+  img {
+    max-width: 100%;
+    max-height: 300px;
+  }
+}
+
+.product {
+  position: relative;
+  &-info {
+    margin-left: 320px;
+    span {
+      display: inline-block;
+    }
+  }
+}
+
+.segmentation {
+  height: 140px;
+  //   background-color: rebeccapurple;
+}
+
+.scan-btn {
+  display: inline-block;
+  position: relative;
+  width: 220px;
+  height: 42px;
+  line-height: 42px;
+  &:hover .qrcode {
+    display: block;
+    opacity: 1;
+  }
+}
+
+.icon-scan {
+  position: relative;
+  top: -1px;
+  width: 20px;
+  height: 42px;
+  margin-right: 5px;
+  background: url(../img/scan-icon.png) no-repeat center center;
+  vertical-align: middle;
+}
+
+.qrcode {
+  display: none;
+  position: absolute;
+  left: 220px;
+  line-height: 22px;
+  bottom: 0;
+  width: 234px;
+  color: #ff2600;
+  border: 2px solid #ff2600;
+  background-color: #fff;
+  transition: all .2 ease;
+  opacity: .3;
+  &-title {
+    padding-top: 20px;
+    padding-bottom: 5px;
+  }
+  img {
+    max-width: 166px;
+  }
+}
+
+.triangle-left {
+  left: -10px;
+  border-right: 10px solid #ff2600;
+  &,
+  &-b {
+    width: 0;
+    height: 0;
+    bottom: 9px;
+    position: absolute;
+    border-top: 10px solid transparent;
+    border-bottom: 10px solid transparent;
+  }
+  &-b {
+    left: -8px;
+    border-right: 10px solid #fff;
+  }
+}

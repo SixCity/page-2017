@@ -1,0 +1,12 @@
+body {
+  font-family: PingFangSC-Light, "Microsoft YaHei", 微软雅黑, sans-serif;
+  //   font-family: "Hiragino Sans GB", NotoSans-Regular, "Microsoft YaHei", "微软雅黑", arial, "Microsoft JhengHei";
+}
+
+.font {
+  @for $i from 12 through 30 {
+    &_#{$i} {
+      font-size: #{$i}px;
+    }
+  }
+}

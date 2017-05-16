@@ -1,0 +1,40 @@
+.height {
+  @for $i from 20 through 90 {
+    &_#{$i} {
+      height: #{$i}px;
+    }
+  }
+  &_60 {
+    height: 60px;
+  }
+  &_80 {
+    height: 80px;
+  }
+  &_82 {
+    height: 82px;
+  }
+  &_120 {
+    height: 120px;
+  }
+  &_300 {
+    height: 300px;
+  }
+}
+
+.line-height {
+  @for $i from 12 through 40 {
+    &_#{$i} {
+      line-height: #{$i}px;
+    }
+  }
+  &_80 {
+    line-height: 80px;
+  }
+  &_82 {
+    line-height: 82px;
+  }
+}
+
+.middle {
+  vertical-align: middle;
+}

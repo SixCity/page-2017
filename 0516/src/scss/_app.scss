@@ -1,0 +1,85 @@
+.logo {
+  img {
+    vertical-align: middle;
+    max-height: 100%;
+  }
+}
+
+.search {
+  position: relative;
+  border: 1px solid #343434;
+  width: 702px;
+  text-align: right;
+  &-key {
+    line-height: 40px;
+    outline: none;
+    border: 0;
+    border: none;
+    float: left;
+    width: 565px;
+    padding-left: 10px;
+  }
+  &-btn {
+    width: 122px;
+    height: 42px;
+    line-height: 42px;
+    text-align: center;
+    color: #fefefe;
+    display: inline-block;
+  }
+}
+
+.loader {
+  min-height: 300px;
+  img {
+    transition: all .3s ease-in-out;
+    animation: rotate .6s infinite linear;
+  }
+}
+
+@keyframes rotate {
+  0% {
+    transform: rotate(0deg);
+  }
+  60% {
+    transform: rotate(280deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+// web-site
+.web {
+  &-title {
+    background: url(../img/web-site-bottom.png) no-repeat center bottom;
+  }
+  &-list {
+    ul {
+      clear: both;
+      overflow: hidden;
+      margin-right: -10px;
+    }
+    .hide_2 {
+      height: 170px;
+    }
+    li {
+      width: 154px;
+      height: 78px;
+      line-height: 78px;
+      margin-right: 5px;
+      margin-bottom: 5px;
+      border: 1px solid #777;
+      float: left;
+      img {
+        max-width: 100%;
+        max-height: 100%;
+      }
+    }
+  }
+  &-more {
+    background-color: #f8f8f8;
+    color: #777;
+    padding: 5px;
+  }
+}

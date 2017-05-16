@@ -1,0 +1,9 @@
+.padding {
+  &-right {
+    @for $i from 0 through 20 {
+      &_#{$i} {
+        padding-right: #{$i}px;
+      }
+    }
+  }
+}

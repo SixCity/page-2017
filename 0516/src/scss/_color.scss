@@ -1,0 +1,23 @@
+.color {
+  &_34 {
+    color: #343434;
+  }
+  &_7 {
+    color: #777;
+  }
+  &_fe {
+    color: #fefefe;
+  }
+  &-red {
+    color: #ff2600;
+  }
+  &-blue {
+    color: #0066c0;
+  }
+}
+
+.bg-color {
+  &_34 {
+    background-color: #343434;
+  }
+}

@@ -1,0 +1,154 @@
+<section class="height_80">
+</section>
+<header class="w_960 m-auto">
+  <div class="logo height_82 line-height_82 text-center margin-bottom_18">
+    <img src="./build/img/logo.png" alt="">
+  </div>
+  <!--search-->
+  <div class="search m-auto">
+    <input id="search-key" type="url" name="" value="" class="search-key color_7" placeholder="输入海外购物网站的商品网址">
+    <a id="search-btn" href="javascript:void(0);" class="search-btn bg-color_34 hover_9">
+      一键海淘
+    </a>
+  </div>
+  <!--search end-->
+</header>
+<!--Placeholder-->
+<section class="height_120"></section>
+<!--Placeholder end-->
+<!--loader-->
+<section id="loader" class="w_960 m-auto hide">
+  <div class="loader text-center">
+    <img src="./build/img/loader.png" alt="">
+  </div>
+</section>
+<!--loader end-->
+<!--product-->
+<section id="product" class="w_960 m-auto product height_300 hide">
+</section>
+<!--product end-->
+<!--Placeholder-->
+<section class="height_120"></section>
+<!--Placeholder end-->
+<!--web-site-->
+<section class="w_960 m-auto">
+  <div class="web-title text-center height_44 margin-bottom_14 font_18 color_34">支持以下海外购物网站</div>
+  <div class="web-list margin-bottom_10">
+    <ul id="web-list-ui" class="hide_2">
+    </ul>
+  </div>
+  <div class="web-more text-center font_14" id="web-more">
+    <a href="javascript:void(0);">展开更多</a>
+  </div>
+</section>
+<!--web-site end-->
+<section class="height_60"></section>
+<!--product template-->
+<script id="product-tpl" type="text/html">
+  <!--thumb-->
+  <div class="thumb-wrap height_300 w_300">
+    <img src="https://images-na.ssl-images-amazon.com/images/I/41L%2BwIQb1ZL.jpg" alt="">
+  </div>
+  <!--thumb end-->
+  <!--product info-->
+  <div class="product-info">
+    <!--网站国家-->
+    <div class="font_16 line-height_24 height_24 margin-bottom_14">
+      <img class="middle" src="./build/img/USA.png" alt="">
+      <span class="color_7 w-max_430 ">
+        <!--<span class="text_1">-->
+        美国亚马逊 Saks Fifth Avenue
+        <!--</span>-->
+      </span>
+      <a href="" class="color-blue fr" target="_black">商品原网址</a>
+    </div>
+    <!--网站国家 end-->
+    <!--标题-->
+    <div class="font_22 height_82 over-hide ">
+      <p class="text_2 line-height_26">
+        Kipling Women's Sharpay Medium Laptop Backpack
+      </p>
+    </div>
+    <!--标题 end-->
+    <div class="segmentation font_14 color_7">
+      <!--商品价格-->
+      <div class="margin-bottom_10">
+        <span class="padding-right_10">商品价格</span>
+        <span class="font_18 color-red">
+          RMB 551.79
+      </span>
+      </div>
+      <!--商品价格 end-->
+      <!--运费-->
+      <div class="margin-bottom_10">
+        <span class="padding-right_10">商家运费</span>
+        <span>
+          RMB 0.00
+      </span>
+      </div>
+      <!--运费 end-->
+      <!--国际运费-->
+      <div class="">
+        <span class="padding-right_10">国际运费</span>
+        <span>
+          入库后根据实际重量称重而得
+      </span>
+      </div>
+      <!--国际运费 end-->
+    </div>
+    <!--一键海淘-->
+    <div class="">
+      <a href="javascript:void(0);" class="scan-btn color_fe bg-color_34 text-center">
+        <span class="icon-scan"></span>
+        <span class=""> 一键海淘</span>
+        <div class="qrcode transition_3">
+          <div class="qrcode-title">
+            使用微信扫一扫，即可下单
+          </div>
+          <div class="">
+            <img src="./build/img/scan.png" alt="">
+          </div>
+          <div class="triangle-left"></div>
+          <div class="triangle-left-b"></div>
+        </div>
+      </a>
+    </div>
+    <!--一键海淘 end-->
+  </div>
+  <!--product info end-->
+</script>
+<!--product template end-->
+
+<!--web site template -->
+<script id="web-tpl" type="text/html">
+  <<=for(var i=0 ; i < list.length; i++) {=>>
+    <li>
+      <img src="./build/img/shop-1.png" alt="">
+    </li>
+    <<=}=>>
+</script>
+<!--web site template end -->
+
+<script src="./build/js/libs.js"></script>
+
+<script>
+  window.onload = function() {
+    // web site
+    var webHtml = template(document.getElementById('web-tpl').innerHTML, {
+      list: [, , , , , , , , , , , , , , , , , , , , , , , , , , , , , , ]
+    });
+
+    document.getElementById("web-list-ui").innerHTML = webHtml
+      // web site end
+      // product
+    var productHtml = template(document.getElementById('product-tpl').innerHTML, {})
+
+    document.getElementById("product").innerHTML = productHtml
+      // product end
+
+    webSiteMore()
+
+    ClickSearch()
+
+  }
+</script>
