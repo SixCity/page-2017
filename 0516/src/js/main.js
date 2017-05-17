@@ -9,6 +9,8 @@ function Loader(bool) {
     loader.removeClass("hide")
     product.addClass("hide")
   }
+
+  $("#return-one").removeClass("hide")
 }
 
 function webSiteMore() {
