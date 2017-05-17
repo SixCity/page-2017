@@ -23,7 +23,6 @@ function ClickSearch() {
   $("#search-btn").on("click", function() {
     var keyInput = $("#search-key")
     var key = trim(keyInput.val())
-    console.log(key)
 
     if (key == "") {
       urlErrMsg("请输入商品网址")
@@ -32,6 +31,7 @@ function ClickSearch() {
 
     if (!checkURL(key)) {
       urlErrMsg("请输入正确的网址")
+      return
     }
 
     Loader()

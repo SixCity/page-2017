@@ -9,6 +9,7 @@
   position: relative;
   border: 1px solid #343434;
   width: 702px;
+  height: 42px;
   text-align: right;
   &-key {
     line-height: 40px;
@@ -26,6 +27,12 @@
     text-align: center;
     color: #fefefe;
     display: inline-block;
+    position: relative;
+    // &:hover {
+    //   &:before {
+    //     max-width: 100%;
+    //   }
+    // }
   }
 }
 
@@ -81,5 +88,55 @@
     background-color: #f8f8f8;
     color: #777;
     padding: 5px;
+    a {
+      position: relative;
+      transition: all .2s linear;
+    }
+    a:hover {
+      &:after {
+        width: 100%;
+      }
+    }
+    a:after {
+      content: '';
+      width: 0;
+      height: 1px;
+      background: #777;
+      position: absolute;
+      transition: all .2s linear;
+      left: 0;
+      bottom: 0;
+    }
+  }
+}
+
+
+/* Effect 11: text fill based on Lea Verou's animation http://dabblet.com/gist/6046779 */
+
+*:after,
+*::before {
+  box-sizing: border-box;
+}
+
+.data-hover {
+  text-shadow: none;
+  position: relative;
+  overflow: hidden;
+  letter-spacing: 1px;
+  display: inline-block;
+  // &:hover {
+  //   &::before {
+  //     max-width: 100%;
+  //   }
+  // }
+  &::before {
+    position: absolute;
+    top: 0;
+    left: 0;
+    overflow: hidden;
+    max-width: 0;
+    color: #777;
+    content: "一键海淘";
+    transition: max-width 0.5s;
   }
 }
