@@ -30,11 +30,9 @@
     color: #fefefe;
     display: inline-block;
     position: relative;
-    // &:hover {
-    //   &:before {
-    //     max-width: 100%;
-    //   }
-    // }
+    &:hover {
+      background-color: #252525;
+    }
   }
 }
 
@@ -91,16 +89,21 @@
   &-more {
     background-color: #f8f8f8;
     color: #777;
-    padding: 5px;
+    padding: 5px 0;
+    &:hover {
+      background: #f0f0f0;
+    }
     a {
+      display: block;
+      width: 100%;
       position: relative;
       transition: all .2s linear;
     }
-    a:hover {
-      &:after {
-        width: 100%;
-      }
-    }
+    // a:hover {
+    //   &:after {
+    //     width: 100%;
+    //   }
+    // }
     a:after {
       content: '';
       width: 0;

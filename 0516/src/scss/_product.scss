@@ -84,3 +84,22 @@
     border-right: 10px solid #fff;
   }
 }
+
+.produc-web {
+  // text-decoration: underline;
+  position: relative;
+  &:after {
+    height: 1px;
+    content: '';
+    position: absolute;
+    bottom: 1px;
+    left: 0;
+    right: 0;
+    background-color: #0066c0;
+  }
+  &:hover {
+    &:after {
+      height: 0;
+    }
+  }
+}
