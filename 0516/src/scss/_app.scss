@@ -150,3 +150,23 @@
     transition: max-width 0.5s;
   }
 }
+
+.hide {
+  display: none;
+}
+
+.back-top {
+  position: fixed;
+  bottom: 50px;
+  width: 50px;
+  height: 50px;
+  border: 1px solid #a9a9a9;
+  background: url("../img/top.png") no-repeat center center;
+  cursor: pointer;
+  left: 50%;
+  margin-left: 520px;
+  transition: all .3 ease;
+  &:hover {
+    background-image: url("../img/top-text.png");
+  }
+}

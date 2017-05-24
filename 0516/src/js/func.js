@@ -45,4 +45,19 @@ function isIE9() {
 
 }
 
+function backTop() {
+  var top = $("#back-top")
+  $(window).scroll(function() {
+    var scrollTop = $(window).scrollTop();
+    top[scrollTop > 400 ? 'show' : 'hide']();
+  });
+
+  top.on("click", function() {
+    $('body,html').animate({
+      scrollTop: 0
+    }, 300);
+  })
+
+}
+
 isIE9()
