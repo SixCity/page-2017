@@ -69,7 +69,7 @@
     <!--标题-->
     <div class="font_22 height_82 over-hide ">
       <p class="text_2 line-height_26">
-        Kipling Women's Sharpay Medium Laptop Backpack
+        <<=data.Title=>>
       </p>
     </div>
     <!--标题 end-->
@@ -143,9 +143,15 @@
     });
 
     document.getElementById("web-list-ui").innerHTML = webHtml
+
+    var data = {
+        Title: "niuhihishis"
+      }
       // web site end
       // product
-    var productHtml = template(document.getElementById('product-tpl').innerHTML, {})
+    var productHtml = template(document.getElementById('product-tpl').innerHTML, {
+      data
+    })
 
     document.getElementById("product").innerHTML = productHtml
       // product end

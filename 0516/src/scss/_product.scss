@@ -3,9 +3,12 @@
   border: 1px solid #343434;
   background: url("../img/loader.svg") no-repeat center center;
   background-size: 60px;
+  text-align: center;
+  line-height: 300px;
   img {
     max-width: 100%;
-    max-height: 300px;
+    max-height: 297px;
+    vertical-align: middle;
   }
 }
 
